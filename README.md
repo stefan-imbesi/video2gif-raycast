@@ -2,9 +2,9 @@
 
 A Raycast extension that converts videos to high-quality GIFs using ffmpeg.
 
-![Custom Convert Form](metadata/screenshot-1.png)
+![Custom Convert Form](https://raw.githubusercontent.com/stefan-imbesi/video2gif-raycast/main/metadata/screenshot-1.png)
 
-![Conversion Complete](metadata/screenshot-2.png)
+![Conversion Complete](https://raw.githubusercontent.com/stefan-imbesi/video2gif-raycast/main/metadata/screenshot-2.png)
 
 ## Features
 
