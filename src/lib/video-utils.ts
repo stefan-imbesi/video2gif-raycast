@@ -57,7 +57,7 @@ export async function extractThumbnail(filePath: string, outputDir: string): Pro
   const ffmpeg = getFfmpegPath();
   const thumbPath = path.join(outputDir, `thumb_${Date.now()}.png`);
 
-  await execa(ffmpeg, ["-i", "--", filePath, "-vf", "thumbnail", "-frames:v", "1", "-y", thumbPath]);
+  await execa(ffmpeg, ["-y", "-i", filePath, "-vf", "thumbnail", "-frames:v", "1", thumbPath]);
 
   return thumbPath;
 }

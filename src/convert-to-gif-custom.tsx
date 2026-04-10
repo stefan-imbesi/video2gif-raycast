@@ -19,7 +19,6 @@ import { convertToGif } from "./lib/ffmpeg";
 import { addHistoryEntry, getHistory } from "./lib/history";
 import { estimateGifSize, calculateHeight } from "./lib/estimate";
 import {
-  Preferences,
   ConversionSettings,
   VideoMetadata,
   HistoryEntry,

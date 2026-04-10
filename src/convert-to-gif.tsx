@@ -16,7 +16,7 @@ import { resolveVideoFile, isSupportedVideo, getUnsupportedExtension } from "./l
 import { getVideoMetadata, formatFileSize, formatDuration, getOutputPath } from "./lib/video-utils";
 import { convertToGif } from "./lib/ffmpeg";
 import { addHistoryEntry } from "./lib/history";
-import { Preferences, ConversionSettings, SUPPORTED_EXTENSIONS } from "./types";
+import { ConversionSettings, SUPPORTED_EXTENSIONS } from "./types";
 
 export default async function Command() {
   const prefs = getPreferenceValues<Preferences>();

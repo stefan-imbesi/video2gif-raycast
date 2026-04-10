@@ -1,6 +1,6 @@
 # Video2Gif Changelog
 
-## [1.0.0] - 2026-03-26
+## [Initial Release] - {PR_MERGE_DATE}
 
 ### Added
 
@@ -11,4 +11,4 @@
 - Automatic video file detection from Finder selection or clipboard
 - Conversion history stored locally
 - Configurable output folder, default quality, and long video threshold via preferences
-- Support for MP4, MOV, AVI, MKV, WebM, FLV, WMV, M4V, 3GP, and MPEG formats
+- Support for MP4, MOV, AVI, MKV, WebM, and M4V formats

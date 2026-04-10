@@ -7,15 +7,20 @@ import { ConversionSettings, ConversionProgress } from "../types";
 import { parseTimeToSeconds } from "./video-utils";
 
 const SEARCH_PATHS = ["/opt/homebrew/bin", "/usr/local/bin", "/usr/bin"];
+const binaryCache = new Map<string, string>();
 
 /**
  * Find a binary by checking common paths.
  * Throws a clear error if the binary is not found.
  */
 function findBinary(name: string): string {
+  const cached = binaryCache.get(name);
+  if (cached) return cached;
+
   for (const dir of SEARCH_PATHS) {
     const candidate = path.join(dir, name);
     if (existsSync(candidate)) {
+      binaryCache.set(name, candidate);
       return candidate;
     }
   }

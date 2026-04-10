@@ -32,15 +32,6 @@ export interface ConversionProgress {
   estimatedRemainingMs: number;
 }
 
-export interface Preferences {
-  outputFolder: string;
-  defaultQuality: string;
-  defaultMaxWidth: string;
-  defaultFps: string;
-  defaultLoopMode: "loop" | "none";
-  longVideoThreshold: string;
-}
-
 export const SUPPORTED_EXTENSIONS = [".mp4", ".mov", ".avi", ".mkv", ".webm", ".m4v"];
 
 export const WIDTH_PRESETS = [
